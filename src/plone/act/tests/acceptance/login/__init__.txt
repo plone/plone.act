@@ -1,7 +1,8 @@
 *** Settings ***
 Resource  plone/act/keywords.txt
 
-Test Setup  Open Plone Root
-Test Teardown  Close All Browsers
+Suite Setup  Open Plone Root
+Test Teardown  Log out
+Suite Teardown Close All Browsers
 
 Suite Setup  Configure Selenium Library
