@@ -6,6 +6,7 @@ Resource  plone/act/keywords.txt
 Test Valid Login
     Given the overlay login form
     When I enter valid credentials
+    And I click on the home link
     Then I am logged in
 
 Test Invalid Login
@@ -23,6 +24,9 @@ I enter valid credentials
     Input text  __ac_name  ${TEST_USER_NAME}
     Input text  __ac_password  ${TEST_USER_PASSWORD}
     Click Button  Log in
+
+I click on the home link
+    And Click Link  Home
 
 I enter invalid credentials
     Input text  __ac_name  ${TEST_USER_NAME}
