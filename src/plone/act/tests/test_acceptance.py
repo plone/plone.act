@@ -12,10 +12,13 @@ def test_suite():
     suite = unittest.TestSuite()
     suite.addTests([
         layered(robotsuite.RobotTestSuite(
-            os.path.join("acceptance", "standard")),
+            os.path.join("acceptance", "standard", "login.txt")),
             layer=PLONE_ZSERVER),
-        layered(robotsuite.RobotTestSuite(
-            os.path.join("acceptance", "livesearch")),
-            layer=LIVESEARCH_ZSERVER),
+        #layered(robotsuite.RobotTestSuite(
+        #    os.path.join("acceptance", "standard")),
+        #    layer=PLONE_ZSERVER),
+        #layered(robotsuite.RobotTestSuite(
+        #    os.path.join("acceptance", "livesearch")),
+        #    layer=LIVESEARCH_ZSERVER),
     ])
     return suite
