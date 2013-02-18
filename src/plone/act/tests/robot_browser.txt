@@ -1,0 +1,10 @@
+*** Settings ***
+
+Library  plone.act.BrowserLibrary
+Variables  plone/act/variables.py
+
+*** Test cases ***
+
+Page contains Plone
+    Go to  ${PLONE_URL}
+    Page should contain  Plone

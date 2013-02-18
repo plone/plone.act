@@ -2,5 +2,6 @@
 from plone.act.keywords import KeywordsLibrary
 from plone.act.remote import RemoteKeywordsLibrary
 from plone.act.server import Zope2ServerLibrary
+from plone.act.browser import BrowserLibrary
 
 from plone.act.keywords import KeywordsLibrary as PloneLibrary  # BBB
