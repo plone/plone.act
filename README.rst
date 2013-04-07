@@ -1,3 +1,9 @@
+.. warning::
+
+   **plone.act** is deprecated.
+
+   Please, use http://pypi.python.org/pypi/plone.app.robotframework instead.
+
 **plone.act** hold experimental
 `Robot Framework <http://code.google.com/p/robotframework/>`_
 resources for writing functional Selenium (including acceptance

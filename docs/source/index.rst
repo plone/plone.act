@@ -1,3 +1,9 @@
+.. warning::
+
+   **plone.act** is deprecated.
+
+   Please, use http://pypi.python.org/pypi/plone.app.robotframework instead.
+
 Plone ACT -- functional tests for Plone made easy
 =================================================
 
